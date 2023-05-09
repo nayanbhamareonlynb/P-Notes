@@ -1,0 +1,161 @@
+
+body,
+.App {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 14px;
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/lightpaperfibers.png);
+}
+* {
+  box-sizing: border-box;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+  color: #08c;
+  background: none;
+  padding: 0;
+  font-size: inherit;
+ 
+  border: 0;
+  margin: 0;
+ 
+}
+button:hover {
+  color: #04c;
+}
+
+.App {
+  display: flex;
+}
+
+
+.Mainbar {
+  width: 40%;
+  height: 100vh;
+  border-right: 1px solid #ddd;
+}
+
+.Mainbar-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+.Mainbar-header h1 {
+  margin: 0;
+}
+.Mainbar-note.active,
+.Mainbar-note.active small {
+  background: #08c;
+  color: white;
+}
+
+.Mainbar-notes {
+  height: calc(100vh - 78px);
+  overflow-y: scroll;
+}
+.Mainbar-note button {
+  color: crimson;
+}
+.Mainbar-note p {
+  margin: 10px 0;
+}
+
+
+.Mainbar-note small {
+  display: block;
+  color: #999;
+}
+
+.Mainbar-note:hover {
+  background: #ddd;
+}
+
+
+.main {
+  width: 70%;
+  height: 100vh;
+}
+.main-note-edit,
+.main-note-preview {
+  height: 50vh;
+}
+
+.no-active-note {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.Mainbar-note {
+  padding: 25px;
+  cursor: pointer;
+}
+.Mainbar-note-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-note-edit {
+  padding: 25px;
+}
+
+.main-note-edit input,
+textarea {
+  display: block;
+  width: 100%;
+  height: calc(50vh - 130px);
+  padding: 10px;
+  resize: none;
+  font-size: inherit;
+  font-family: inherit;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+ 
+}
+.main-note-edit input {
+  height: 50px;
+  font-size: 2rem;
+}
+
+
+
+
+.preview-title {
+  padding: 25px 25px 0 25px;
+  margin: 0;
+}
+
+
+
+  .main-note-preview {
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
+    background: rgba(0, 0, 0, 0.02);
+  }
+  .Mainbar-notes {
+    height: calc(100vh - 78px);
+  }
+
+  .main-note-edit,
+  .main-note-preview {
+    height: 50vh;
+  }
+  .main {
+    width: 60%;
+    height: 100vh;
+  
+  }
+  .markdown-preview {
+    padding: 0 25px 25px 25px;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  @media (min-width: 768px) {
+ 
+    .Mainbar {
+      width: 40%;
+      height: 100vh;
+    }
+}
